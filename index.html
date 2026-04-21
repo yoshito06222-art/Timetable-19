@@ -146,13 +146,14 @@ body{
 .sh-btn.acc{background:var(--acc);color:#fff}
 .sh-cancel{background:none;border:none;color:var(--mut);border-radius:10px;
   padding:12px;font-size:15px;cursor:pointer;width:100%;text-align:center}
-.ov{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;
-  display:flex;align-items:flex-end;justify-content:center}
-.ov.mid{align-items:center}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;
+  display:flex;align-items:flex-end;justify-content:center;
+  padding-bottom:env(safe-area-inset-bottom)}
+.ov.mid{align-items:center;padding-bottom:0}
 .modal{background:var(--sur);border-radius:18px 18px 0 0;width:100%;max-width:600px;
   max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;
   padding:18px 14px 24px}
-.ov.mid .modal{border-radius:16px;margin:12px;max-height:86vh;width:calc(100% - 24px)}
+.ov.mid .modal{border-radius:16px;margin:12px;max-height:86vh;width:calc(100% - 24px);align-self:center}
 .drag{width:36px;height:4px;background:var(--brd);border-radius:2px;margin:0 auto 14px}
 .modal h2{font-size:17px;font-weight:700;margin-bottom:14px}
 .dsec{margin-bottom:14px}
